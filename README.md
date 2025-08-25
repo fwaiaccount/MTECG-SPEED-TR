@@ -3,9 +3,9 @@
 
 
 
-
 ## 🔹 Released Components
-
+We have made the following components publicly available:
+- **Final model architecture**
 
 
 
