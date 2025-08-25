@@ -9,7 +9,7 @@ from functools import partial
 
 import torch
 import torch.nn as nn
-import models.vision_transformer as vision_transformer
+import MTECG_arch.models.vision_transformer as vision_transformer
 class VisionTransformer(vision_transformer.VisionTransformer):
     """ Vision Transformer with support for global average pooling
     """
