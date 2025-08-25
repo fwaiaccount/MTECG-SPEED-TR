@@ -37,7 +37,7 @@ X = torch.randn(1, 1, 12, 5000)  # Shape: (batch_size, 1, leads, time points)
 y = model(X)
 ```
 ### 2. **Self-Distillation Code**
-- **File Location:** `./MTECG_arch/self_distillation_loss.py`
+- **File Location:** `self_distillation_loss.py`
 - **Description:** This file details the knowledge distillation loss function used by SPEED-TR. Our knowledge distillation method builds upon [Distilling the Knowledge in a Neural Network](https://arxiv.org/abs/1503.02531) and the [PyTorch Tutorial: Knowledge Distillation](https://docs.pytorch.org/tutorials/beginner/knowledge_distillation_tutorial.html), with modifications to the temperature and loss weighting tailored for our task.
 - **Usage:** To apply this self distillation loss, please use the following code:
 ```python
