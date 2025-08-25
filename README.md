@@ -1,13 +1,15 @@
-# MTECG-SPEED-TR
+# SPEED-TR: Self-Distilled and Pre-trained Transformer model for Enhanced ECG Detection of Tricuspid Regurgitation
 
+This repository provides the **official implementation** of the paper:
 
+**"SPEED-TR: Self-Distilled and Pre-trained Transformer model for Enhanced ECG Detection of Tricuspid Regurgitation with Multi-Center Validation and Comprehensive Risk Factor Analysis" (2025+)**
 
+---
 
 ## 🔹 Released Components
 We have made the following components publicly available:
 - **Final model architecture**
-
-
+- **Self-distillation code** proposed in the paper
 
 
 ## 🔹 File Structure & Usage
