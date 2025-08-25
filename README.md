@@ -9,7 +9,7 @@ This repository provides the **official implementation** of the paper:
 ## 🔹 Released Components
 We have made the following components publicly available:
 - **Final model architecture**
-- **Self-distillation code** proposed in the paper
+- **Self-distillation code** employed in the paper
 
 
 ## 🔹 File Structure & Usage
