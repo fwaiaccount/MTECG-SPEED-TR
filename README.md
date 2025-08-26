@@ -43,7 +43,7 @@ y = model(X)
 ```python
 import torch
 import torch.nn
-import models.et_family  as et_family
+import MTECG_arch.models.et_family  as et_family
 from self_distillation_loss import distillation_loss
 model_names = 'ti_12_25'  # Model name
 
@@ -60,7 +60,7 @@ student_model = et_family.__dict__[model_names](
 
 # Example input: 12-lead ECG signal with a sampling rate of 500Hz and 10 seconds duration
 X = torch.randn(1,1,12,5000)  # Shape: (batch_size, channels, leads, samples)
-targets=torch.randn(1,1)  # Shape: (batch_size, labels)
+targets=torch.randint(0,2,(1,1)).float()  # Shape: (batch_size, labels)
 
 with torch.no_grad():
     teacher_logits = teacher_model(X)  #Forward pass to get the teacher model output
