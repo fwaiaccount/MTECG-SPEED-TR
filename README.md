@@ -60,7 +60,7 @@ student_model = et_family.__dict__[model_names](
 
 # Example input: 12-lead ECG signal with a sampling rate of 500Hz and 10 seconds duration
 X = torch.randn(1,1,12,5000)  # Shape: (batch_size, channels, leads, samples)
-targets=torch.randint(0,2,(1,1)).float()  # Shape: (batch_size, labels)
+targets=torch.randint(0,2,(1,1)).float()  # Shape: (batch_size, 1)
 
 with torch.no_grad():
     teacher_logits = teacher_model(X)  #Forward pass to get the teacher model output
